@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link href="css/styles.css" rel="stylesheet" type="text/css">
+    <script
+      src="https://code.jquery.com/jquery-3.4.1.min.js"
+      integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+      crossorigin="anonymous"></script>
+    <script src="js/scripts.js"></script>
+    <title>Celebrity Dating Quiz</title>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Celebrity Dating Quiz</h1>
+
+      <p>What celebrity should you date? Enter your information to find out!</p>
+
+      <form id="preferences">
+        <label for="age">What is your age? </label>
+        <input id="age" type="text">
+        <br>
+        <label for="gender">What gender do you date?</label>
+        <select id="gender">
+          <option value="female">Female</option>
+          <option value="male">Male</option>
+          <option value="other">No Preference</option>
+        </select>
+        <br>
+        <button type="submit" class="btn">enter</button>
+      </form>
+
+      <div class="answer" id="youngMale">
+        You should date Grover!
+      </div>
+      <div class="answer" id="youngFemale">
+        You should date Prarie Dawn!
+      </div>
+      <div class="answer" id="midMale">
+        You should date Thor!
+      </div>
+      <div class="answer" id="midFemale">
+        You should date Sansa!
+      </div>
+      <div class="answer" id="oldMale">
+        You should date Homer!
+      </div>
+      <div class="answer" id="oldFemale">
+        You should date Marge!
+      </div>
+    </div>
+  </body>
+</html>
