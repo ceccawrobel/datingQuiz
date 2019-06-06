@@ -4,6 +4,9 @@ $(document).ready(function() {
     var age = parseInt($("input#age").val());
     var gender = $("select#gender").val();
 
+    console.log("age is " + age);
+    console.log("gender pref is " + gender);
+
     if (age < 18 && gender === "male") {
       $("#youngMale").show();
     } else if (age < 18 && gender === "female") {
@@ -26,7 +29,7 @@ $(document).ready(function() {
       $("#oldMale").show();
       $("#oldFemale").show();
     }
-    
+
     event.preventDefault();
   });
 });
